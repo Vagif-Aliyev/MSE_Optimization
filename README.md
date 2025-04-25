@@ -1,17 +1,17 @@
-# 🛠️ Lithology-Aware Drilling Optimization: Utah FORGE Well 56-32
+#  Lithology-Aware Drilling Optimization: Utah FORGE Well 56-32
 
-## 📌 Project Overview
+##  Project Overview
 
 This project explores high-frequency drilling data from Utah FORGE Well 56-32 to identify optimal **ROP/WOB ratios** for minimizing **Mechanical Specific Energy (MSE)** across different lithologies. The objective is to build a transferable methodology that supports optimization in future wells drilled from the same pad or geological setting.
 
-## 🎯 Objective
+##  Objective
 
 - Cluster the well into **geologically meaningful lithology zones**
 - Analyze how **WOB, ROP, RPM**, and **MSE** interact within each zone
 - Identify **optimal drilling parameter windows** that correlate with **efficient energy transfer (low MSE)**
 - Enable **data-driven optimization strategies** for future wells
 
-## 🧩 Dataset
+##  Dataset
 
 - **Drilling Data**: High-frequency time-series data (~1M+ rows, 46 columns)
 - **Wireline Logs**: Interpolated onto drilling depth (Gamma Ray, DTCO, TNPH)
@@ -19,7 +19,7 @@ This project explores high-frequency drilling data from Utah FORGE Well 56-32 to
 - **Fracture Data**: Available as supplementary information (CSV)
 - **XRD Data**: Mineralogy samples used for cluster calibration
 
-## 🧠 Methodology
+##  Methodology
 
 ### 1. Data Preparation
 - Cleaned and interpolated log data (`GR_TMG`, `DTCO`, `TNPH`)
@@ -46,7 +46,7 @@ Two approaches explored:
   - Depth-track cluster profiles
   - Heatmaps and scatter plots by lithology
 
-## 🧰 Tools & Technologies
+##  Tools & Technologies
 
 - **Language**: Python 3.x
 - **Libraries**: pandas, numpy, matplotlib, seaborn, scikit-learn
@@ -55,18 +55,18 @@ Two approaches explored:
   - `Drilling Data EDA.ipynb`
   - `Lithology Clustering & MSE Analysis.ipynb`
 
-## 📈 Key Findings
+##  Key Findings
 
 - MSE optimization is strongly dependent on lithology zone
 - Alluvium required lower WOB and higher RPM for optimal efficiency
 - Granodiorite zones showed higher MSE sensitivity to RPM than ROP
 - KMeans clustering generally aligned well with known lithology zones
 
-## 🚀 Future Work
+##  Future Work
 
 - Validate results on upcoming Utah FORGE wells
 - Apply clustering + MSE optimization framework to other geothermal or hard-rock wells
 - Incorporate downhole vibrations and BHA metadata into efficiency modeling
 
-## 📁 Repository Structure
+##  Repository Structure
 
